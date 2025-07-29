@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 export const show = (type, message, duration = 3000) => {
   const options = {
     autoClose: duration,
-    closeButton: false,
+    closeButton: true,
   };
 
   switch (type) {

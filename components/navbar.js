@@ -61,7 +61,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-light px-3 justify-content-between">
+    <nav className="navbar navbar-light px-3 sticky-top justify-content-between">
       <Link href="/" className="btn">
         <h1 className="mb-0">
           <span className="fw-bold text-warning">Food Order</span> App

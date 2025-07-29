@@ -20,7 +20,7 @@ export default function ClientLayout({ children }) {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        closeButton={false}       
+        closeButton={true}       
         theme="light"
       />
       <Navbar />
