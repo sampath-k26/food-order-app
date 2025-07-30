@@ -4,6 +4,7 @@ export const show = (type, message, duration = 3000) => {
   const options = {
     autoClose: duration,
     closeButton: true,
+    toastId:message,
   };
 
   switch (type) {
