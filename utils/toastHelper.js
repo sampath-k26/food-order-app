@@ -1,19 +1,10 @@
 import { toast } from 'react-toastify';
 
 export const show = (type, message, duration = 3000) => {
-  const id = `${type}-${message}`;
-
-  if (toast.isActive(id)) return;
-
   const options = {
     autoClose: duration,
     closeButton: true,
-    toastId: id,
-    position: 'top-center',
-    pauseOnHover: true,
-    draggable: true,
-    closeOnClick: true,
-     onClose: () => shownToasts.delete(id),
+    toastId:message,
   };
 
   switch (type) {
