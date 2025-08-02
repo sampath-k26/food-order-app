@@ -13,6 +13,7 @@ export const show = (type, message, duration = 3000) => {
     pauseOnHover: true,
     draggable: true,
     closeOnClick: true,
+     onClose: () => shownToasts.delete(id),
   };
 
   switch (type) {
