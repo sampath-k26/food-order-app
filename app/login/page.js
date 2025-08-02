@@ -29,9 +29,9 @@ const handleSubmit = async (e) => {
 
     if (res.ok) {
       show('success', 'Login Successful!');
-      setTimeout(() => {
+      
         router.push('/browse');
-      }, 1000);
+      
       
     } else {
       show('error', data.message || 'Login failed.');
